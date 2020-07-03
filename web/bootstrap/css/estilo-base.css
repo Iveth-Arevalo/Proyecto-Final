@@ -1,0 +1,55 @@
+.encabezado{
+    background-color: #286090;
+    color: #fff;
+    font-size: 20px;
+    height: 40px;
+    width: 100%;
+}
+
+/*.contenido{
+    padding: 0px;
+}*/
+
+
+.contenido{
+    width: 100%;
+    left: 5%;
+    right: 5%;
+    top: 50px;
+    bottom: 50px;
+    background-color: #EEEEEE;
+    text-align: center;
+}
+
+
+.pie{
+    background-color: #9d9d9d;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+/*.pie{
+    background-color: #9d9d9d;
+    color: #fff;
+    height: 36px;
+    padding: 10px;
+    text-align: center;
+}*/
+
+.estilo_consulta{
+    position: absolute; /* podría ser relative */
+    width: 90%;
+    height: 200px;
+    margin-left: 5%;
+    margin-right: 5%;
+    top: 50px;
+}
+
+.th{
+    text-align: center;
+    background-color: #7ea2b4;
+    color: #fff;
+}
+
