@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="java" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a33f19ec-c5c1-45d7-8423-06dade98e3e0">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     tb_usuario.`id` AS tb_usuario_id,
+     tb_usuario.`nombre` AS tb_usuario_nombre,
+     tb_usuario.`apellido` AS tb_usuario_apellido,
+     tb_usuario.`correo` AS tb_usuario_correo,
+     tb_usuario.`usuario` AS tb_usuario_usuario,
+     tb_usuario.`clave` AS tb_usuario_clave,
+     tb_usuario.`tipo` AS tb_usuario_tipo,
+     tb_usuario.`estado` AS tb_usuario_estado,
+     tb_usuario.`pregunta` AS tb_usuario_pregunta,
+     tb_usuario.`respuesta` AS tb_usuario_respuesta,
+     tb_usuario.`fecha_registro` AS tb_usuario_fecha_registro
+FROM
+     `tb_usuario` tb_usuario]]>
+	</queryString>
+	<field name="tb_usuario_id" class="java.lang.Integer"/>
+	<field name="tb_usuario_nombre" class="java.lang.String"/>
+	<field name="tb_usuario_apellido" class="java.lang.String"/>
+	<field name="tb_usuario_correo" class="java.lang.String"/>
+	<field name="tb_usuario_usuario" class="java.lang.String"/>
+	<field name="tb_usuario_clave" class="java.lang.String"/>
+	<field name="tb_usuario_tipo" class="java.lang.Boolean"/>
+	<field name="tb_usuario_estado" class="java.lang.Boolean"/>
+	<field name="tb_usuario_pregunta" class="java.lang.String"/>
+	<field name="tb_usuario_respuesta" class="java.lang.String"/>
+	<field name="tb_usuario_fecha_registro" class="java.sql.Timestamp"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="62" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="351" y="34" width="100" height="20" backcolor="#66FF66" uuid="24603caf-a1b9-40cf-a120-3de2f632ffc5"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Reporte de usuarios]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="1" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="33" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="52" height="20" backcolor="#66FF66" uuid="632167a9-cbd8-409a-bd8b-df27df4d0052"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[tb_usuario_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="64" y="0" width="72" height="20" backcolor="#66FF66" uuid="66fa0f3e-8d51-44b3-968f-0a114ac0614c"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[tb_usuario_nombre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="156" y="2" width="100" height="20" backcolor="#66FF66" uuid="b219c214-d46c-4ea4-b8da-e6efc32fd932"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[tb_usuario_apellido]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="273" y="2" width="100" height="20" backcolor="#66FF66" uuid="aed62dd1-4d72-4d0a-b946-5144deee414a"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[tb_usuario_correo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="471" y="2" width="76" height="20" backcolor="#66FF66" uuid="976755ab-29c1-47df-b1e0-cfb2e0d0af18"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[tb_usuario_usuario]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="386" y="2" width="69" height="20" backcolor="#66FF66" uuid="fdd9a8de-1ca8-4458-930e-f267e8b36ad1"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[tb_usuario_clave]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="564" y="2" width="61" height="20" backcolor="#66FF66" uuid="0305a363-4afb-4207-8cd2-eec270068715"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[tb_usuario_tipo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="638" y="2" width="46" height="20" backcolor="#66FF66" uuid="fec2559c-dbd4-4c11-9f2a-7ac524567496"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[tb_usuario_estado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="696" y="2" width="100" height="20" backcolor="#66FF66" uuid="52b9a912-c066-48ac-9df4-1bf8388b7b60"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[tb_usuario_fecha_registro]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="28" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="33" height="20" uuid="86cea6aa-4d94-4441-b7f7-9949b8e64d88"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_usuario_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="64" y="0" width="66" height="20" uuid="b4d157f3-9515-4d05-b191-29da99a81a40"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_usuario_nombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="156" y="0" width="70" height="20" uuid="c2a2d88b-999e-492c-a1ee-14a68db267ad"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_usuario_apellido}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="256" y="0" width="130" height="20" uuid="58c8bc33-2528-4be2-987e-2ea046dc82c4"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_usuario_correo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="471" y="0" width="76" height="20" uuid="4e503f69-0180-4524-9f7f-6a287875050d"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_usuario_usuario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="387" y="0" width="68" height="20" uuid="fd688b0a-d93a-4774-8ee6-707728972c96"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_usuario_clave}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="564" y="0" width="61" height="20" uuid="3bcd35c0-937b-4684-aa92-a854d41f5637"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_usuario_tipo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="638" y="0" width="46" height="20" uuid="fc1d8653-2066-496b-b1ff-3d3d04fd8f0d"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_usuario_estado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="696" y="0" width="100" height="20" backcolor="#66FF66" uuid="127f7c77-e3bd-442b-b647-970c88bc7b58"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_usuario_fecha_registro}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="3" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="5" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="3" splitType="Stretch"/>
+	</summary>
+</jasperReport>

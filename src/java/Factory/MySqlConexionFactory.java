@@ -1,0 +1,26 @@
+
+package Factory;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public final class MySqlConexionFactory extends ConexionBD{
+
+    public MySqlConexionFactory(String[] criterios) {
+        this.parametros = criterios;
+        this.open();
+    }   
+   
+    @Override
+    public Connection open() {
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            //en this.parametros pasaremos los datos de la BD 
+            this.conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/" + this.parametros[0], this.parametros[1], this.parametros[2]);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return this.conexion;
+    }
+    
+}

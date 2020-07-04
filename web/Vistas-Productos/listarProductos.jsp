@@ -20,7 +20,7 @@
         
         <div class="container">
             <a href="<%= request.getContextPath() %>/productos?opcion=crear" class="btn btn-success btn-sm glyphicon glyphicon-pencil" role="button"> Nueva Producto</a>
-            <span><a href="Vistas-Productos/vistaReporte.jsp" class="btn btn-success glyphicon glyphicon-print"> Reporte PDF</a></span>
+            <span><a href="Vistas-Productos/vistaReportes.jsp" class="btn btn-success glyphicon glyphicon-print"> Reporte PDF</a></span>
             <h3>Registro de Prodcutos</h3>
             <table class="table table-striped">
                 <tr>

@@ -21,7 +21,7 @@
     </head>
     <body>
         <%                                                   // Mal redireccionada estaba la ruta
-            File reportfile = new File(application.getRealPath("./Reportes/reporte_cat.jasper"));
+            File reportfile = new File(application.getRealPath("./Reportes/usuario.jasper"));
             Map<String, Object> parametros = new HashMap<String, Object>();
             byte[] bytes = JasperRunManager.runReportToPdf(reportfile.getPath(), parametros, con);
             response.setContentType("application/pdf");
